@@ -273,6 +273,66 @@ footer b{color:var(--ink)}
   .pane{padding:18px 14px 22px}
 }
 </style>
+<style id="dark-theme" disabled>
+/* ===== DARK LANDING VARIANT ===== */
+:root{
+ --navy:#eaf2ff;--blue:#438cff;--sky:#55c8ff;--indigo:#7b8cff;--deep:#071326;--cyan:#69d7ff;
+ --ice:#14243b;--bg:#071326;--ink:#eaf2ff;--muted:#9aacc6;--line:rgba(148,180,225,.18);
+ --shadow:0 22px 65px rgba(0,0,0,.34),0 0 0 1px rgba(117,170,255,.06);
+ --shadow-sm:0 8px 26px rgba(0,0,0,.24);
+}
+html,body{background:#071326;color:#eaf2ff}
+body{background-image:radial-gradient(rgba(84,145,226,.13) 1px,transparent 1px);background-size:25px 25px}
+.nav{background:rgba(5,16,32,.84);border-bottom-color:rgba(130,170,230,.18)}
+.brand{color:#f2f7ff}.brand img{max-height:48px;filter:drop-shadow(0 2px 12px rgba(74,154,255,.18))}
+.nav a.l{color:#a8bad5}.nav a.l:hover{background:#142944;color:#fff;box-shadow:none}
+.hero .mesh{background:radial-gradient(560px 380px at 85% 8%,rgba(39,130,255,.23),transparent 70%),radial-gradient(500px 380px at 4% 92%,rgba(0,204,255,.12),transparent 70%)}
+.eyebrow,.hc,.float{background:rgba(16,36,62,.88);border-color:var(--line);color:#cfe2ff;box-shadow:var(--shadow-sm)}
+h1,.shead h2,.quiz h3,.tab .tn,.dh h3,.dc h4,.skbtn,.mbar.top{color:#edf5ff}
+h1 .grad{background:linear-gradient(100deg,#66aaff,#56ddff);-webkit-background-clip:text;background-clip:text}
+.lead{color:#afc1dc}.shead h2 small{color:#63c9ff}.shead p,.official,.qnote{color:#9aacc6}
+.btn.primary{background:linear-gradient(110deg,#2678ed,#25b9e9);box-shadow:0 12px 30px rgba(27,126,235,.28)}
+.btn.primary:hover{background:linear-gradient(110deg,#398cff,#35caff)}
+.btn.ghost{background:rgba(17,38,65,.7);color:#d9eaff;border-color:var(--line)}
+.editor{background:#091a31;border:1px solid rgba(112,166,244,.22)}
+section.block{margin-top:78px}
+.quiz,.detail{background:rgba(13,29,51,.94);border-color:var(--line);box-shadow:var(--shadow)}
+.qhead{background:linear-gradient(90deg,#132c4a,#0d1d33);border-bottom-color:var(--line)}
+.qhead span{color:#9aacc6}.qbody{background:transparent}
+.stp{background:#172d49;border-color:#294565;color:#a8bad5}.stp.done{background:#2678ed;border-color:#2678ed;color:white}.stp.now{background:#10243e;border-color:#55baff;color:#8bdcff}
+.stl{background:#263d5b}.stl.done:after{background:#3d9aff}
+.opts .opt{background:#10233c;border-color:#29415f}.opt:hover{background:#142d4b;border-color:#58baff}.opt .em{background:#172f4e;border-color:#355475}
+.opt .t{color:#eaf2ff}.qres .rart{background:linear-gradient(160deg,#173456,#0d1c31);border-color:var(--line)}
+.mbar{color:#a8bad5}.mbar .tr{background:#203a59}.mbar .pc{color:#eaf2ff}
+.tab{background:linear-gradient(155deg,#122944,#0d1e34);border-color:var(--line);box-shadow:var(--shadow-sm)}
+.tab .num{color:rgba(115,174,255,.12)}.tab .tc{color:#72c9ff}.tab .ti{background:rgba(73,147,255,.15)}
+.tab .ts{color:#9aacc6}.tab:hover{background:#173352}.tab[aria-selected="true"]{background:linear-gradient(145deg,#1766c4,#153a70);border-color:#57baff}
+.dh{background:linear-gradient(130deg,rgba(36,107,190,.26),#10213a 72%)}
+.dh:before{opacity:.42}.dh .txt{color:#eaf2ff}.tagline{color:#77d2ff}.code{background:linear-gradient(110deg,#2779e9,#20a9d5)}
+.fact{background:#132943;border-color:var(--line);color:#c6d7ee}.fact b{color:#74caff}
+.stack span{background:rgba(65,148,245,.14);color:#9bd9ff}
+.seg{background:#0c1c31;border-top-color:var(--line)}.seg button{color:#9aacc6}.seg button[aria-selected="true"]{background:#142b48;color:#7ed2ff;box-shadow:0 -3px 0 #48b7ff inset}
+.dc{background:linear-gradient(160deg,#142d4a,#0d1d32);border-color:var(--line)}.dc .no{color:rgba(117,174,255,.13)}
+.dc .ic{background:linear-gradient(145deg,#287ee9,#1761b8);box-shadow:0 8px 22px rgba(29,120,224,.25)}.dc p{color:#a9bad2}
+.skbtn{background:#10243d;border-color:#29415f;color:#dbe9fc}.skbtn:hover{border-color:#56baff;background:#142d4b}.skbtn[aria-selected="true"]{background:linear-gradient(110deg,#2879e8,#1760b8);border-color:#439aff;color:#fff}
+.skpanel{background:radial-gradient(circle at 90% 10%,rgba(103,208,255,.2),transparent 42%),linear-gradient(145deg,#174d91,#102746);border:1px solid rgba(120,190,255,.25)}
+footer{color:#9aacc6;border-top:1px solid var(--line)}
+.favpanel{background:#10243d;border-color:var(--line);color:#eaf2ff;box-shadow:var(--shadow)}
+.favbtn{background:linear-gradient(110deg,#2879e8,#159bc9);color:#fff;box-shadow:0 10px 28px rgba(18,111,213,.3)}
+.favul li{border-color:var(--line)}
+input,select,textarea{color:#eaf2ff}
+:focus-visible{outline-color:#65caff!important}
+@media(prefers-reduced-motion:no-preference){.hero .mesh:after{content:"";position:absolute;inset:12% 8%;border:1px solid rgba(99,177,255,.08);border-radius:40px;transform:rotate(-7deg);pointer-events:none}}
+
+
+</style>
+<style id="theme-toggle-style">
+.nav ul{align-items:center;flex-wrap:wrap}
+.theme-toggle{display:inline-flex;align-items:center;gap:7px;border:1px solid #b8cbe0;border-radius:999px;padding:8px 13px;background:#fff;color:#083f88;font:600 13px inherit;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
+.theme-toggle:hover{background:#e8f0fa}
+#dark-theme:not([disabled]) ~ body .theme-toggle{background:#10243d;color:#d9eaff;border-color:rgba(148,180,225,.28)}
+@media(max-width:720px){.nav .wrap{height:auto;min-height:60px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}.nav ul{gap:2px}.theme-toggle{padding:7px 10px;font-size:12px}}
+</style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -283,6 +343,9 @@ footer b{color:var(--ink)}
       <li><a class="l" href="#quiz">Тест</a></li>
       <li><a class="l" href="#explorer">Специальности</a></li>
       <li><a class="l" href="#table">Таблица</a></li>
+      <li><button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Переключить на тёмную тему">
+        <span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Тёмная тема</span>
+      </button></li>
     </ul>
   </div>
 </nav>
@@ -822,6 +885,29 @@ function boot(){
   buildEditor(); renderQuiz(); buildTabs(); renderDetail(); buildTable(); renderFav(); reveal(); progress();
 }
 boot();
+</script>
+
+<script>
+(()=>{
+ const style=document.getElementById('dark-theme');
+ const btn=document.getElementById('themeToggle');
+ if(!style||!btn)return;
+ const label=btn.querySelector('.theme-label');
+ const icon=btn.querySelector('.theme-icon');
+ function setTheme(dark){
+   style.disabled=!dark;
+   document.documentElement.dataset.theme=dark?'dark':'light';
+   btn.setAttribute('aria-pressed',String(dark));
+   btn.setAttribute('aria-label',dark?'Переключить на светлую тему':'Переключить на тёмную тему');
+   label.textContent=dark?'Светлая тема':'Тёмная тема';
+   icon.textContent=dark?'☀':'☾';
+   try{localStorage.setItem('career-presentation-theme',dark?'dark':'light')}catch(e){}
+ }
+ let initial=false;
+ try{initial=localStorage.getItem('career-presentation-theme')==='dark'}catch(e){}
+ setTheme(initial);
+ btn.addEventListener('click',()=>setTheme(style.disabled));
+})();
 </script>
 </body>
 </html>
